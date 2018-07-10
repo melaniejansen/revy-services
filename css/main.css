@@ -1,0 +1,551 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+    background-color: #fbfbfb;
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    padding: 0; 
+    font-size: 1em;
+    width: 100%;
+    color: #00304E   
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background: #939393;
+    width: 100%;
+    height: 700px; 
+    color: #00304E;  
+    overflow-x: hidden;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #d8d9db;
+}
+footer {
+    width: 100%;
+    background: #00304E;  
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background: #00304E;
+    height: 70px;
+}
+.flex-name {
+    display: flex;
+    font-family: "Abril Fatface", cursive;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5em;
+
+}
+.flex-navigation {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    font-size: 1.25em;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1em;
+}
+.flex-navigation li:hover, a:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background: #333 url('../img/background.jpg') no-repeat center;
+    background-size: cover;
+}
+button {
+    background: #00304E; 
+    border: 2px solid #00304E;
+    border-radius: 25px;
+    color: #fff;
+    height: 3em;
+    width: 10em;
+}
+button:hover {
+    background: transparent;
+    color:#00304E;
+    border: 1px solid #00304E;
+    cursor: pointer;
+}
+h1 {
+    font-size: 5em;
+    font-family: "Abril Fatface", cursive;
+}
+.welcome h3 {
+    font-size: 1.75em;
+    text-transform: none;
+    margin: 0 0 70px 0;
+    text-align: center;
+}
+h2 {
+    padding: 1em;
+    font-size: 2.25em;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+#services {
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 750px;
+}
+.sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 550px;
+}
+.div-1, .div-2, .div-3 {
+    width: 25%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    font-size: 1.1em;
+}
+.cleaning {
+    width: 100%;
+    height: 350px;
+    background: #333 url('../img/cleaning.jpg') no-repeat center;
+    background-size: cover;
+}
+.dog-walking {
+    width: 100%;
+    height: 350px;
+    background: #333 url('../img/dog-walking.jpg') no-repeat center;
+    background-size: cover;
+}
+.pet-sitting {
+    width: 100%;
+    height: 350px;
+    background: #333 url('../img/pet-sitting.jpg') no-repeat center;
+    background-size: cover;
+}
+#about {
+    height: 750px;
+    background: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+.portrait {
+    width: 40%;
+    height: 450px;
+    background: #333 url('../img/jasmin.jpg') no-repeat center;
+    background-size: cover;
+    margin-left: 2em;
+    border: 15px solid #fff;
+}
+.intro-text {
+    width: 60%;
+    margin-left: 3em;
+}
+#contact {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.contact-sections {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+.phone, .hours, .email {
+    width: 25%;
+    height: 150px;
+    padding: 10px; 
+    text-align: center;
+}
+i {
+    font-size: 3em;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media only screen and (max-width: 575px) {
+    
+    header {
+        height: 500px;
+    }
+    .welcome {
+        height: 500px;
+    }
+    .welcome h3 {
+        font-size: 1.2em;
+        margin: 0 2em;
+        padding: 2em;
+        text-align: center;
+    }
+    .flex-navigation {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    h2{
+        font-size: 1.5em;
+        padding: 0;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    .intro {
+        flex-direction: column;
+        font-size: 1em;
+        height: 550px;
+    }
+    .intro-text {
+        margin-left: 0;
+        width: 100%;
+    }
+    #services, #about {
+        height: auto;
+    }
+    .sections {
+        display: block;
+        height: auto;
+    }
+    .div-1, .div-2, .div-3 {
+        font-size: 1em;
+        height: auto;
+        padding: 0;
+        width: 100%;
+    }
+    .cleaning, .dog-walking, .pet-sitting {
+        height: 200px;
+    }
+    .portrait {
+        border: none;
+        margin: 0;
+    }
+    .contact-sections {
+        font-size: 0.7em;
+        width: 80%;
+    }
+    .phone, .hours, .email {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 980px) {
+    .intro {
+        font-size: 1.1em;
+    }
+    .contact-sections {
+        width: 80%;
+    }
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
